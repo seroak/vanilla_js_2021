@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    font-family: "Azeret Mono", monospace;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bgimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.8;
+    z-index: -1;
+    background-size: cover;
+}
+
+.head_block {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+header {
+    display: inline-block;
+}
+
+.clock {
+    margin-top: 50px;
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+    font-size: 3rem;
+    font: bold;
+    color: hsl(7, 62%, 48%);
+    font-weight: 700;
+    background-color: hsla(213, 100%, 98%, 0.5);
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
+
+#login-form input {
+    margin-top: 50px;
+    margin-bottom: 3rem;
+    color: hsla(258, 69%, 53%, 0.836);
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: hsla(213, 100%, 98%, 0.5);
+    border: none;
+    padding: 2rem;
+    border-radius: 1.5rem;
+}
+
+#greeting {
+    margin-top: 50px;
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+    font-size: 3rem;
+    font: bold;
+    color: hsl(256, 62%, 48%);
+    font-weight: 700;
+    background-color: hsla(213, 100%, 98%, 0.5);
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
+
+#todo-form input {
+    margin-top: 50px;
+    margin-bottom: 3rem;
+    color: hsla(258, 69%, 53%, 0.836);
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: hsla(213, 100%, 98%, 0.5);
+    border: none;
+    padding: 2rem;
+    border-radius: 1.5rem;
+}
+
+#todo-form input:focus {
+    outline: none;
+}
+
+#login-form input::-webkit-input-placeholder {
+    color: hsla(258, 100%, 77%, 0.7);
+}
+
+#login-form input::-moz-placeholder {
+    color: hsla(258, 100%, 77%, 0.7);
+}
+
+#login-form input:-ms-input-placeholder {
+    color: hsla(258, 100%, 77%, 0.7);
+}
+
+#login-form input::-ms-input-placeholder {
+    color: hsla(258, 100%, 77%, 0.7);
+}
+
+#login-form input::placeholder {
+    color: hsla(258, 100%, 77%, 0.7);
+}
+
+#login-form input:focus {
+    outline: none;
+}
+
+#todo-list {
+    list-style: none;
+    width: 32rem;
+    padding: 0;
+    height: 420px;
+    overflow: auto;
+}
+
+#todo-list li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: hsl(256, 81%, 29%);
+    font-weight: 600;
+    border-bottom: solid 2px #937c68;
+    padding-bottom: 0.5rem;
+}
+
+#todo-list li button {
+    color: cornsilk;
+    background-color: rgb(167, 174, 187);
+}
+
+#weather {
+    display: flex;
+    color: hsl(31, 91%, 87%);
+    justify-content: space-between;
+    width: 30rem;
+    font-size: 2rem;
+    font-weight: 1000;
+}
+
+#weather span {
+    background-color: hsla(213, 100%, 98%, 0.5);
+    border: none;
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
+
+#quote {
+    display: flex;
+    color: hsl(31, 91%, 87%);
+    justify-content: space-between;
+    width: 60rem;
+    font-size: 1rem;
+    font-weight: 1000;
+}
+
+.hidden {
+    display: none;
+}
